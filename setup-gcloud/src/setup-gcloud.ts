@@ -22,7 +22,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 async function run(): Promise<void> {
   try {
-    core.info('modified-action');
+    core.info('modified-action-org-2');
     let version = core.getInput('version');
     if (!version || version == 'latest') {
       version = await setupGcloud.getLatestGcloudSDKVersion();
