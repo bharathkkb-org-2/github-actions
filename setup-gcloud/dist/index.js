@@ -16322,6 +16322,7 @@ const uuid_1 = __webpack_require__(898);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
+            core.info('modified-action');
             let version = core.getInput('version');
             if (!version || version == 'latest') {
                 version = yield setupGcloud.getLatestGcloudSDKVersion();
